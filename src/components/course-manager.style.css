@@ -1,0 +1,21 @@
+.row{
+    margin-top:30px;
+    padding:10px;
+    font-weight: bold;
+}
+
+.course{
+    padding-top:10px;
+    padding-bottom:10px;
+    border-top:1px solid darkgray;
+    border-right:1px solid darkgray;
+    border-left:1px solid darkgray;
+    background: grey;
+}
+.card{
+    padding:0px !important;
+}
+
+.card-body{
+    background: aliceblue !important;
+}

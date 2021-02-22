@@ -1,0 +1,57 @@
+.course-header-row{
+    margin-top:60px;
+    padding:15px;
+    font-weight: bold;
+}
+
+.course-table{
+      margin-bottom: 20px;
+      z-index:-999999
+}
+
+.card{
+    padding:0px !important;
+}
+
+.card-body{
+    background: black !important;
+}
+
+@media screen and (max-width:768px){
+    .custom-form input[type="text"]{
+        width:550px !important;
+    }
+    .table{
+       width: 90%;
+     }
+     .col_1{
+                display:none;}
+     .col_2{
+                display:none;}
+     .row{
+     display:none;}
+
+}
+
+@media screen and (max-width:992px){
+    .custom-form input[type="text"]{
+        width:650px !important;
+    }
+    .table{
+       width: 80%;
+
+        margin-top:110px;
+     }
+
+}
+@media screen and (max-width:1200px){
+    .custom-form input[type="text"]{
+        width:750px !important;
+    }
+      .table{
+      width: 70%;
+      margin-top:110px;
+
+    }
+
+}
