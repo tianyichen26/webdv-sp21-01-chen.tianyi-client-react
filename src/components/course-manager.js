@@ -87,25 +87,7 @@ export default class CourseManager
 
                                   </div>
 
-                     <div className="row">
-                        <div className="col-md-4">
-                            Title
-                        </div>
-                        <div className="col-md-3 show">
-                            <a className="dropdown-toggle"
-                                id="dropdownMenuLink" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                Owned By
-                            </a>
-                            <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a className="dropdown-item">Owned by me </a>
-                                <a className="dropdown-item">Owned by anyone</a>
-                            </div>
-                        </div>
-                        <div className="col-md-3">
-                            Last modified by me
-                        </div>
-                         </div>
+
 
         <Route path="/courses/table" exact={true} >
           <CourseTable

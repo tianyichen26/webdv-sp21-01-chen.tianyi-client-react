@@ -21,7 +21,11 @@ export default class CourseTable extends
 
             <thead>
                             <tr>
-                            </tr></thead>
+                            </tr>
+                            <th>Title</th>
+                            <th class='head_1'>Owned by me </th>
+                            <th class='head_2'>Last Modified</th>
+                            </thead>
             <tbody>
               {
                 this.props.courses.map(course =>
