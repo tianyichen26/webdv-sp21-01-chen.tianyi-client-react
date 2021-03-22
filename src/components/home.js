@@ -12,8 +12,16 @@ export default () =>
             <Link to="/courses/grid" className="list-group-item">
                 Courses Grid
             </Link>
-            <Link to="/editor" className="list-group-item">
+            <Link to="/CourseEditor" className="list-group-item">
                 Course Editor
             </Link>
+                        <Link to="/cc" className="list-group-item">
+                            aaa
+                        </Link>
+
+                                                <Link to="/widgets/heading-widget" className="list-group-item">
+                                                    aaa
+                                                </Link>
         </div>
+
     </>

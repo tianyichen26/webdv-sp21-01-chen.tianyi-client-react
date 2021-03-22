@@ -22,7 +22,9 @@ const CourseRow = (
     }
 
     return(
+
         <tr>
+
         <td>
             {
                 !editing &&
@@ -56,7 +58,10 @@ const CourseRow = (
 
 
         </td>
-    </tr>)
+
+    </tr>
+    )
+
 }
 
 export default CourseRow

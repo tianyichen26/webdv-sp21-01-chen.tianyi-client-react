@@ -38,7 +38,10 @@ const EditableItem = (
                         setEditing(false)
                         updateItem(cachedItem)
                     }} className="fas fa-check"></i>
-                    <i onClick={() => deleteItem(item)} className="icon fas fa-times"></i>
+                                        <i onClick={() => {
+                                            setEditing(false)
+                                            deleteItem(item)
+                                        }} className="fas fa-times btn btn-sm float-right"/>
                 </>
             }
         </>
