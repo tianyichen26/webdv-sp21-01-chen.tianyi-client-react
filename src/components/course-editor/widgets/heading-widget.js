@@ -14,6 +14,7 @@ const HeadingWidget = (
             {
                 editing &&
                 <>
+                <div className="col-md-3 col-5">
                     <select value={cachedWidget.type} className="form-control"
                             onChange={e => setCachedWidget({
                                 ...cachedWidget,
@@ -27,6 +28,7 @@ const HeadingWidget = (
                         <option value={"LIST"}>List</option>
                         <option value={"HTML"}>HTML</option>
                     </select>
+                      </div>
                     <br/>
                     <div>
                         <input value={cachedWidget.text} className="form-control"

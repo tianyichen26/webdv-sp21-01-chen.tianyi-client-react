@@ -1,28 +1,29 @@
-const baseUrl = "https://hw3-wbdv-sp21-client-react.herokuapp.com/";
+const appUrl = "https://cs5610-hw1.herokuapp.com/api";
 
-export const createWidget = (topicId, widget) =>
-    fetch(`${baseUrl}/topics/${topicId}/widgets`, {
+export const createWidget = (topicid, widget) =>
+    fetch(`${appUrl}/topics/${topicid}/widgets`, {
         method: "POST",
         body: JSON.stringify(widget),
         headers: {
-            'content-type': 'application/json'
+            'content-type': 'application/json',
+            'Accept': 'application/json'
         }
     })
         .then(response => response.json())
 
-export const findWidgetsForTopic = (topicId) =>
-    fetch(`${baseUrl}/topics/${topicId}/widgets`)
+export const findWidgetsForTopic = (topicid) =>
+    fetch(`${appUrl}/topics/${topicid}/widgets`)
         .then(response => response.json())
 
 export const findAllWidgets = () =>
-    fetch(`${baseUrl}/widgets`)
+    fetch(`${appUrl}/widgets`)
         .then(response => response.json())
 
 
 export const findWidgetById = (widgetId) => {}
 
 export const updateWidget = (widgetId, widget) =>
-    fetch(`${baseUrl}/widgets/${widgetId}`, {
+    fetch(`${appUrl}/widgets/${widgetId}`, {
         method: "PUT",
         body: JSON.stringify(widget),
         headers: {
@@ -32,7 +33,7 @@ export const updateWidget = (widgetId, widget) =>
         .then(response => response.json())
 
 export const deleteWidget = (widgetId) =>
-    fetch(`${baseUrl}/widgets/${widgetId}`, {
+    fetch(`${appUrl}/widgets/${widgetId}`, {
             method: "DELETE",
         })
         .then(response => response.json())

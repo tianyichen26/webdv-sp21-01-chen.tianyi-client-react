@@ -39,7 +39,7 @@ const CourseEditor = ({history}) => {
                         <i className="fas fa-times fa-2x btn"></i>
                     </Link>
 
-                    <h1>Web Dev Course Editor - {title}</h1>
+                    <h1>Course Editor</h1>
                 </nav>
 
                 <div className="row bottom-part">
