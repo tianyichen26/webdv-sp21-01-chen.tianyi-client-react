@@ -5,6 +5,8 @@ import CourseEditor from "./course-editor/course-editor";
 import './course-manager.style.css';
 import {Link, Route} from "react-router-dom";
 import courseService, {findAllCourses, deleteCourse} from "../services/course-service";
+import QuizzesList from "./quizzes/quizzes-list";
+import Quiz from "./quizzes/quiz"
 
 export default class CourseManager
   extends React.Component {
@@ -104,6 +106,18 @@ export default class CourseManager
         <Route path="/courses/editor"
          render={(props) => <CourseEditor {...props}/>}>
         </Route>
+                        <Route path="/courses/:courseId/quizzes" exact={true}>
+
+                            <div className="mda-page-content">
+                                <QuizzesList/>
+                            </div>
+                        </Route>
+                        <Route path="/courses/:courseId/quizzes/:quizId" exact={true}>
+
+                            <div className="mda-page-content">
+                                <Quiz/>
+                            </div>
+                        </Route>
 
         <button className="plus-button float-right" onClick={this.addCourse}>
             <i className="fas fa-plus-circle fa-4x plus-icon"/>
